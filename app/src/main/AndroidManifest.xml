@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cmpundhir.cm.allwidgetsdemo">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +15,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FormActivity"></activity>
+        <activity android:name=".VolleyActivity"></activity>
+        <activity android:name=".ButterKnifeActivity" />
+        <activity android:name=".RecyclerVierActivity" />
+        <activity android:name=".ListView_package.CustomeListViewActivity" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".WebViewProgressBarActivity" />
+        <activity android:name=".PermissionActivity" />
+        <activity android:name=".DialogueActivity" />
+        <activity android:name=".Intent_package.SendDataActivity" />
+        <activity android:name=".Intent_package.NextActivity" />
+        <activity android:name=".IntentActivity" />
+        <activity android:name=".FormActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".ToastActivity" />
         <activity android:name=".MainActivity">

@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FF5722"
         android:textColor="#fff"
-        android:text="Form" />
+        android:text="Card View" />
     <Button
         android:id="@+id/b4"
         android:layout_columnWeight="1"
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#0336FF"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="Intent" />
     <Button
         android:id="@+id/b5"
         android:layout_columnWeight="1"
@@ -52,55 +52,61 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#E91E63"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="Dialogue" />
     <Button
+        android:id="@+id/b6"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#673AB7"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="Permission" />
     <Button
+        android:id="@+id/b7"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#4CAF50"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="WebView/Pro Bar" />
     <Button
+        android:id="@+id/b8"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#27998E"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="List View" />
     <Button
+        android:id="@+id/b9"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFAB00"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="Recycler View" />
     <Button
+        android:id="@+id/b10"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#DD2C00"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="ButterKnife" />
     <Button
+        android:id="@+id/b11"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#F4FF81"
         android:textColor="#3F3F3F"
-        android:text="Button" />
+        android:text="Volley" />
     <Button
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"

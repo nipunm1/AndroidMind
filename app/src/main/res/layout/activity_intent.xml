@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#A2A21E"
+    android:layout_height="match_parent"
+    tools:context=".IntentActivity">
+<androidx.cardview.widget.CardView
+    android:layout_weight="1"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Explicit Intent"
+    android:textSize="25dp"
+    android:gravity="center_horizontal"
+    android:textColor="#000"
+    />
+  <TableLayout
+      android:layout_marginTop="40dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_weight="1"
+       android:layout_height="match_parent"
+       >
+    <Button
+      android:id="@+id/b1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:textSize="20dp"
+      android:textColor="#000"
+      android:backgroundTint="#446FC5"
+      android:text="Next Activity"
+    >
+    </Button>
+    <Button
+      android:id="@+id/b2"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:textSize="20dp"
+      android:textColor="#000"
+      android:backgroundTint="#446FC5"
+      android:text="Send Data"
+     >
+    </Button>
+   </TableRow>
+
+  </TableLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+    android:layout_weight="1"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Implicit Intent"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="match_parent">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+    >
+      <Button
+        android:id="@+id/b3"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="Send Message"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:backgroundTint="#446FC5"
+      >
+      </Button>
+      <Button
+        android:id="@+id/b4"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="Phone Call"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:backgroundTint="#446FC5"
+       >
+       </Button>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+    >
+      <Button
+        android:id="@+id/b5"
+        android:text="E-Mail"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#446FC5"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+      >
+      </Button>
+      <Button
+        android:id="@+id/b6"
+        android:text="Google Map"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#446FC5"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+       >
+       </Button>
+    </TableRow>
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+    >
+    <Button
+     android:id="@+id/b7"
+     android:layout_weight="1"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:text="Web Search"
+     android:textSize="20dp"
+     android:textColor="#000"
+     android:backgroundTint="#446FC5"
+     />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#446FC5"
+            android:text="Contact"
+            android:textColor="#000"
+            android:textSize="20dp" />
+    </TableRow>
+    <TableRow
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+    >
+    <Button
+      android:id="@+id/b9"
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="Alarm Clock"
+      android:textSize="20dp"
+      android:textColor="#000"
+      android:backgroundTint="#446FC5"
+     />
+    <Button
+      android:id="@+id/b10"
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="Camera"
+      android:textSize="20dp"
+      android:textColor="#000"
+      android:backgroundTint="#446FC5"
+    />
+    </TableRow>
+    </TableLayout>
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
