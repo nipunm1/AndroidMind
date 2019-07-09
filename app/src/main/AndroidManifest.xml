@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VolleyActivity"></activity>
+        <activity android:name=".RetroFitActivity"></activity>
+        <activity android:name=".VolleyActivity" />
         <activity android:name=".ButterKnifeActivity" />
         <activity android:name=".RecyclerVierActivity" />
         <activity android:name=".ListView_package.CustomeListViewActivity" />

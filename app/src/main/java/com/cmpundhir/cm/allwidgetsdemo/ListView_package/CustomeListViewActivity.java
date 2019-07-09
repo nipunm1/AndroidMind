@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import com.cmpundhir.cm.allwidgetsdemo.R;
 
-public class CustomeListViewActivity extends AppCompatActivity {
+public class   CustomeListViewActivity extends AppCompatActivity {
 String title[] = {"Java","C++","C#","Python","JavaScript"};
 String subtitle[] = {"OOPS Language","Not purely OOPS Language","Desktop Language","Advance Language","Scripting Client Side Language"};
 Integer logo[] = {R.drawable.java,R.drawable.cplusplus,R.drawable.chash,R.drawable.python,R.drawable.javascript};

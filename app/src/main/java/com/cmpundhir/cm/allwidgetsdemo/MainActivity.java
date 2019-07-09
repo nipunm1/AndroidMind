@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12;
     private void init(){
         b1 = findViewById(R.id.b1);
         b2 = findViewById(R.id.b2);
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b9 = findViewById(R.id.b9);
         b10 = findViewById(R.id.b10);
         b11 = findViewById(R.id.b11);
+        b12 = findViewById(R.id.b12);
         b1.setOnClickListener(this);
         b2.setOnClickListener(this);
         b3.setOnClickListener(this);
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b9.setOnClickListener(this);
         b10.setOnClickListener(this);
         b11.setOnClickListener(this);
+        b12.setOnClickListener(this);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.b9 : intent = new Intent(MainActivity.this,RecyclerVierActivity.class);break;
             case R.id.b10 : intent = new Intent(MainActivity.this,ButterKnifeActivity.class);break;
             case R.id.b11 : intent = new Intent(MainActivity.this,VolleyActivity.class);break;
+            case R.id.b12 : intent = new Intent(MainActivity.this,RetroFitActivity.class);break;
         }
         if(intent!=null)
         startActivity(intent);

@@ -16,10 +16,11 @@ import java.util.Random;
 
 public class ToastActivity extends AppCompatActivity {
     Button simpletoastBtn;
-    ImageButton imageButton;
+    ImageButton imageButton,imageButton2;
     private void init(){
         simpletoastBtn = findViewById(R.id.button);
         imageButton = findViewById(R.id.imageButton);
+        imageButton2 = findViewById(R.id.imageButton2);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,12 @@ public class ToastActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 showPokeToast();
+            }
+        });
+        imageButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showPokeToast2();
             }
         });
     }
@@ -61,6 +68,16 @@ public class ToastActivity extends AppCompatActivity {
         Toast toast = new Toast(ToastActivity.this);
         toast.setDuration(Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER_VERTICAL,0,0);
+        toast.setView(layout);
+        toast.show();
+    }
+    private void showPokeToast2(){
+        View layout = getLayoutInflater().inflate(R.layout.pokemon_toast, (ViewGroup) findViewById(R.id.custom_toast_layout));
+        ImageView img = layout.findViewById(R.id.img);
+        img.setImageDrawable(getDrawable(R.drawable.charmender));
+        Toast toast = new Toast(ToastActivity.this);
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(layout);
         toast.show();
     }
