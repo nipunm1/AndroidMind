@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/linearlayout"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ButtonActivity">
@@ -78,4 +79,11 @@
             android:layout_weight="1"
             android:text="Others" />
     </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Normally RadioButton created through drag and drop but android gives us Dynamic RadioButton in which you can create RadioButton through programming for example to create RadioButton given below dynamically check the Souce code"
+        android:layout_height="wrap_content" />
 </LinearLayout>

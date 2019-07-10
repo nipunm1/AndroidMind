@@ -9,14 +9,18 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ButtonActivity extends AppCompatActivity implements View.OnClickListener {
 Button btn,btn2,btn3,btn4;
+LinearLayout linearLayout;
 ImageButton imageButton;
-RadioGroup radioGroup;
+RadioGroup radioGroup,D_radioGroup;
+RadioButton D_rb1,D_rb2,D_rb3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,14 +39,35 @@ RadioGroup radioGroup;
         btn3.setOnClickListener(this);
         btn4.setOnClickListener(this);
         imageButton.setOnClickListener(this);
-        int radio_id = radioGroup.getCheckedRadioButtonId();
-        RadioButton radioButton = findViewById(radio_id);
-        if(radio_id == -1){
-            Toast.makeText(ButtonActivity.this, "No Radio button is selected", Toast.LENGTH_LONG).show();
-        }
-        else{
-            Toast.makeText(ButtonActivity.this, "You have selected radiobutton"+radioButton.getText(), Toast.LENGTH_LONG).show();
-        }
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                RadioButton radioButton = (RadioButton)findViewById(i);
+                Toast.makeText(ButtonActivity.this, "You have selected "+radioButton.getText()+" radio button",Toast.LENGTH_LONG).show();
+            }
+        });
+
+        //Dynamic Radio Button Code
+        D_radioGroup = new RadioGroup(ButtonActivity.this);
+        linearLayout = (LinearLayout)findViewById(R.id.linearlayout);
+        D_rb1 = new RadioButton(ButtonActivity.this);
+        D_rb2 = new RadioButton(ButtonActivity.this);
+        D_rb3 = new RadioButton(ButtonActivity.this);
+        D_rb1.setText("Male");
+        D_rb2.setText("Female");
+        D_rb3.setText("Others");
+        D_radioGroup.addView(D_rb1);
+        D_radioGroup.addView(D_rb2);
+        D_radioGroup.addView(D_rb3);
+        D_radioGroup.setOrientation(RadioGroup.VERTICAL);
+        linearLayout.addView(D_radioGroup);
+        D_radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                RadioButton radioButton = (RadioButton)findViewById(i);
+                Toast.makeText(ButtonActivity.this, "You have selected dynamic "+radioButton.getText()+" RadioButton", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
