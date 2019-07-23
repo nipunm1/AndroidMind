@@ -15,7 +15,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AutoCompleteTextViewAndSpinnerActivity"></activity>
+        <activity android:name=".AdMobs_package.RewardedActivity"></activity>
+        <activity android:name=".AdMobs_package.InterstitialActivity" />
+        <activity android:name=".AdMobs_package.BannerActivity" />
+        <activity android:name=".SqlLiteActivity" />
+        <activity android:name=".AdMobsActivity" />
+        <activity android:name=".SharedPreferenceActivity" />
+        <activity android:name=".Sensors_package.AccelerometerSensorsActivity" />
+        <activity android:name=".Sensors_package.LightSensorsActivity" />
+        <activity android:name=".Sensors_package.GravitySensorsActivity" />
+        <activity android:name=".Sensors_package.ListOfSensorsActivity" />
+        <activity android:name=".SearchBarActivity" />
+        <activity android:name=".RatingBarActivity" />
+        <activity android:name=".SensorsActivity" />
+        <activity android:name=".GesturesActivity" />
+        <activity android:name=".ImageSwitcherAndSliderActivity" />
+        <activity android:name=".AutoCompleteTextViewAndSpinnerActivity" />
         <activity android:name=".RetroFitActivity" />
         <activity android:name=".VolleyActivity" />
         <activity android:name=".ButterKnifeActivity" />
@@ -38,6 +53,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Sample AdMob App ID: ca-app-pub-9428743662353184~3271443324 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9428743662353184~3271443324"/>
     </application>
 
 </manifest>

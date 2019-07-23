@@ -126,19 +126,77 @@
         android:textColor="#fff"
         android:text="ACTV/Spinner" />
     <Button
+        android:id="@+id/b14"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#03A9F4"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="Imgage S/S" />
+
     <Button
+        android:id="@+id/b15"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#EA00B7"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="Gestures" />
+    <Button
+        android:id="@+id/b16"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#AF983F"
+        android:textColor="#fff"
+        android:text="Sensors" />
+    <Button
+        android:id="@+id/b17"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EC44FF"
+        android:textColor="#fff"
+        android:text="Rating Bar" />
+    <Button
+        android:id="@+id/b18"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#69F0AE"
+        android:textColor="#3F3F3F"
+        android:text="Search View" />
+    <Button
+        android:id="@+id/b19"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0091EA"
+        android:textColor="#3F3F3F"
+        android:text="S_Preference" />
+    <Button
+        android:id="@+id/b20"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#548A92"
+        android:textColor="#3F3F3F"
+        android:text="AdMobs" />
+    <Button
+        android:id="@+id/b21"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DF684B"
+        android:textColor="#3F3F3F"
+        android:text="SqlLite" />
+
 </GridLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:columnCount="2"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".SensorsActivity">
+<Button
+    android:id="@+id/btn"
+    android:backgroundTint="#C56363"
+    android:textColor="#000"
+    android:text="List Of Sensors"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_columnWeight="1"
+    android:layout_rowWeight="1"
+    />
+<Button
+    android:textColor="#000"
+    android:text="Gravity Sensor"
+    android:id="@+id/btn2"
+    android:backgroundTint="#64DD17"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_columnWeight="1"
+    android:layout_rowWeight="1"
+    />
+<Button
+    android:id="@+id/btn3"
+    android:textColor="#000"
+    android:text="Light Sensor"
+    android:backgroundTint="#FFD600"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_columnWeight="1"
+    android:layout_rowWeight="1"/>
+<Button
+    android:id="@+id/btn4"
+    android:textColor="#000"
+    android:text="Accelerometer Sensor"
+    android:backgroundTint="#6677DD"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_columnWeight="1"
+    android:layout_rowWeight="1"/>
+
+</GridLayout>
