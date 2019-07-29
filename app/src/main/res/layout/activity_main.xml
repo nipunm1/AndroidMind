@@ -169,7 +169,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#69F0AE"
-        android:textColor="#3F3F3F"
         android:text="Search View" />
     <Button
         android:id="@+id/b19"
@@ -178,7 +177,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#0091EA"
-        android:textColor="#3F3F3F"
+        android:textColor="#fff"
         android:text="S_Preference" />
     <Button
         android:id="@+id/b20"
@@ -187,7 +186,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#548A92"
-        android:textColor="#3F3F3F"
+        android:textColor="#fff"
         android:text="AdMobs" />
     <Button
         android:id="@+id/b21"
@@ -195,8 +194,34 @@
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#fff"
         android:backgroundTint="#DF684B"
-        android:textColor="#3F3F3F"
         android:text="SqlLite" />
+    <Button
+        android:id="@+id/b22"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#717AD6"
+        android:text="GoogleMaps" />
+    <Button
+        android:id="@+id/b23"
+        android:textColor="#fff"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#827717"
+        android:text="Animation" />
+    <Button
+        android:id="@+id/b24"
+        android:textColor="#fff"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E25C5C"
+        android:text="Layouts" />
 
 </GridLayout>

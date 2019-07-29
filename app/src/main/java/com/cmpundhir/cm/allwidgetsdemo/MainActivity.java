@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24;
     private void init(){
         b1 = findViewById(R.id.b1);
         b2 = findViewById(R.id.b2);
@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b19 = findViewById(R.id.b19);
         b20 = findViewById(R.id.b20);
         b21 = findViewById(R.id.b21);
+        b22 = findViewById(R.id.b22);
+        b23 = findViewById(R.id.b23);
+        b24 = findViewById(R.id.b24);
         b1.setOnClickListener(this);
         b2.setOnClickListener(this);
         b3.setOnClickListener(this);
@@ -53,6 +56,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b19.setOnClickListener(this);
         b20.setOnClickListener(this);
         b21.setOnClickListener(this);
+        b22.setOnClickListener(this);
+        b23.setOnClickListener(this);
+        b24.setOnClickListener(this);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +93,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.b19 : intent = new Intent(MainActivity.this,SharedPreferenceActivity.class);break;
             case R.id.b20 : intent = new Intent(MainActivity.this,AdMobsActivity.class);break;
             case R.id.b21 : intent = new Intent(MainActivity.this,SqlLiteActivity.class);break;
+            case R.id.b22 : intent = new Intent(MainActivity.this,GoogleMapsActivity.class);break;
+            case R.id.b23 : intent = new Intent(MainActivity.this,AnimationActivity.class);break;
+            case R.id.b24 : intent = new Intent(MainActivity.this,LayoutActivity.class);break;
         }
         if(intent!=null)
         startActivity(intent);

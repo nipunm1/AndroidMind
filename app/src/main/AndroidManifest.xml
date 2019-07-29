@@ -15,7 +15,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdMobs_package.RewardedActivity"></activity>
+        <activity android:name=".Animation_package.GifActivity"></activity>
+        <activity android:name=".Animation_package.LottieActivity" />
+        <activity android:name=".Animation_package.TogetherActivity" />
+        <activity android:name=".Animation_package.SequentialActivity" />
+        <activity android:name=".Animation_package.BounceActivity" />
+        <activity android:name=".Animation_package.SlideDownActivity" />
+        <activity android:name=".Animation_package.SlideUpActivity" />
+        <activity android:name=".Animation_package.MoveActivity" />
+        <activity android:name=".Animation_package.RotateActivity" />
+        <activity android:name=".Animation_package.ZoomOutActivity" />
+        <activity android:name=".Animation_package.ZoomInActivity" />
+        <activity android:name=".Animation_package.BlinkActivity" />
+        <activity android:name=".Animation_package.CrossFadingActivity" />
+        <activity android:name=".Animation_package.FadeOutActivity" />
+        <activity android:name=".Animation_package.FadeInActivity" />
+        <activity android:name=".Animation_package.AnimationHomeActivity" />
+        <activity android:name=".LayoutActivity" />
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".GoogleMapsActivity" />
+        <activity android:name=".AdMobs_package.RewardedActivity" />
         <activity android:name=".AdMobs_package.InterstitialActivity" />
         <activity android:name=".AdMobs_package.BannerActivity" />
         <activity android:name=".SqlLiteActivity" />
@@ -52,11 +71,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- Sample AdMob App ID: ca-app-pub-9428743662353184~3271443324 -->
+        </activity> <!-- Sample AdMob App ID: ca-app-pub-9428743662353184~3271443324 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-9428743662353184~3271443324"/>
+            android:value="ca-app-pub-9428743662353184~3271443324" />
     </application>
 
 </manifest>

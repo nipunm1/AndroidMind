@@ -3,6 +3,7 @@ package com.cmpundhir.cm.allwidgetsdemo.AdMobs_package;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.cmpundhir.cm.allwidgetsdemo.R;
@@ -13,7 +14,7 @@ import com.google.android.gms.ads.reward.RewardedVideoAd;
 import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 public class RewardedActivity extends AppCompatActivity implements RewardedVideoAdListener{
-RewardedVideoAd rewardedVideoAd;
+    RewardedVideoAd rewardedVideoAd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +24,11 @@ RewardedVideoAd rewardedVideoAd;
         rewardedVideoAd.setRewardedVideoAdListener(RewardedActivity.this);
         loadedRewardedVideoAd();
         if(rewardedVideoAd.isLoaded()){
+            Log.d("TAG","Ad is loaded");
             rewardedVideoAd.show();
         }
         else{
+            Log.d("TAG","Ad is not loaded");
             Toast.makeText(RewardedActivity.this, "Ad is not loaded", Toast.LENGTH_LONG).show();
         }
     }
